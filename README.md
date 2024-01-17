@@ -5,4 +5,8 @@ The window is a global object in JavaScript, but global is the global object in 
 
 
 
-Streaming: It is the way of transfering large amount of data in small chunks to the browser as they get ready little by little.
+`Streaming`: It is the way of transfering large amount of data in small chunks to the browser as they get ready little by little.
+
+## Client and Server
+
+## Request and Response
