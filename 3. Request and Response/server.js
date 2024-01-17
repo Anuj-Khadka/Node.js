@@ -1,10 +1,24 @@
 const http = require('http')
 const fs = require('fs')
+const _ = require('lodash')
 
 let server = http.createServer((req, res) => {
     // console.log('request made\n', req)
     console.log(req.url, req.method)
 
+    // lodash
+    const num = _.random(1,10)
+    console.log(num)
+
+    const great = _.once(()=>{         // run only once
+        console.log('hello')    
+    }
+    )
+
+    great()
+    great()
+
+    
     // text type
     // set header content type 
     // res.setHeader('Content-Type', 'text/plain')
@@ -23,7 +37,7 @@ let server = http.createServer((req, res) => {
 
     
 
-    let path = './views/';
+    let path = './3. Request and Response/views/';
 
     switch (req.url) {
         case '/':
